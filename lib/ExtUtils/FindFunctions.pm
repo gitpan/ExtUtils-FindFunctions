@@ -5,18 +5,18 @@ use DynaLoader;
 require Exporter;
 
 {   no strict;
-    $VERSION = '0.01';
+    $VERSION = '0.02';
     @ISA     = qw(Exporter);
     @EXPORT  = qw(&have_functions);
 }
 
 =head1 NAME
 
-ExtUtils::FindFunctions - The great new ExtUtils::FindFunctions!
+ExtUtils::FindFunctions - Find functions in external libraries
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 SYNOPSIS
 
@@ -30,7 +30,8 @@ Version 0.01
 This module provides the C<have_functions()> function which can be used to 
 check if given functions are provided by an external library. Its aim is 
 to be used as an embedded library by F<Makefile.PL> which needs such 
-facilities.
+facilities. Use the B<install-extutils-findfunctions> command to embed it 
+in your distribution.
 
 =head1 EXPORT
 
@@ -61,7 +62,7 @@ C<funcs> - a reference to the list of functions to search
 
 C<return_as> - specify the type of the result, either as an C<array> 
 or as a C<hash>. As an array, only the functions found in the libraries 
-are reurned. As a hash, the keys are the function names and their value
+are returned. As a hash, the keys are the function names and their value
 indicates if the function is present or not.
 
 =back

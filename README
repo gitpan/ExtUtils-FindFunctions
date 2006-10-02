@@ -1,3 +1,16 @@
+NAME
+
+    ExtUtils::FindFunctions - Find functions in external libraries
+
+
+DESCRIPTION
+
+    This module provides the "have_functions()" function which can be used
+    to check if given functions are provided by an external library. Its aim
+    is to be used as an embedded library by Makefile.PL which needs such
+    facilities. Use the install-extutils-findfunctions command to embed it
+    in your distribution.
+
 
 INSTALLATION
 

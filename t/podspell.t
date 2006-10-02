@@ -26,3 +26,5 @@ hashrefs
 lookup
 hostname
 AnnoCPAN
+extutils
+findfunctions

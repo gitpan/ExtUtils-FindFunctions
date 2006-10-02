@@ -6,6 +6,7 @@ my $builder = Module::Build->new(
     license             => 'perl',
     dist_author         => 'Sébastien Aperghis-Tramoni <sebastien@aperghis.net>',
     dist_version_from   => 'lib/ExtUtils/FindFunctions.pm',
+    script_files        => [ 'bin/install-extutils-findfunctions' ], 
     build_requires => {
         'Test::More' => 0,
     },
