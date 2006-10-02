@@ -1,0 +1,19 @@
+---
+name: ExtUtils-FindFunctions
+version: 0.01
+author:
+  - 'Sébastien Aperghis-Tramoni <sebastien@aperghis.net>'
+abstract: The great new ExtUtils::FindFunctions!
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+build_requires:
+  Test::More: 0
+provides:
+  ExtUtils::FindFunctions:
+    file: lib/ExtUtils/FindFunctions.pm
+    version: 0.01
+generated_by: Module::Build version 0.2805
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
